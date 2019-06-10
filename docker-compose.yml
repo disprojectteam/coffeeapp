@@ -1,0 +1,18 @@
+version: '2.1'
+
+services:
+  coffeeapp:
+    image: coffeeapp
+    container_name: coffeeapp
+    build: .
+    command: node --inspect=0.0.0.0:9300 server/server.js
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3100:3100
+      - 9300:9300
+    network:
+      - erdis
+networks: 
+  erdis:
+    external: true
