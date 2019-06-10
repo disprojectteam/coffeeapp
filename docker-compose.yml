@@ -8,6 +8,7 @@ services:
     command: node --inspect=0.0.0.0:9300 server/server.js
     environment:
       NODE_ENV: production
+      NODE_PORT: "3100"
     ports:
       - 3100:3100
       - 9300:9300

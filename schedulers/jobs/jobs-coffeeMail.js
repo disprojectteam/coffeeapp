@@ -13,7 +13,7 @@ class Coffee{
             await sgMail.send({
                 to:to,
                 from:'kahveyapp@gmail.com',
-                subject:'Deneme maili',
+                subject:'Kahve Maili FYI',
                 text:name,
                 cc:cclist
             })
