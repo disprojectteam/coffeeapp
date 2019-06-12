@@ -11,7 +11,7 @@ KisilerDict = {'Taygun Karpuzoglu':'taygun.karpuzoglu@loft.com.tr','Melih Toprak
 'Serif Bekar':'serif.bekar@colins.com.tr','Gokce Guneri':'gokce.guneri@colins.com.tr'}
 
 
-const cronMethod = cron.schedule('00 06 * * *' , () => {
+const cronMethod = cron.schedule('30 05 * * *' , () => {
 
     var sansliKisi = coffeeMail.obj.KisiSec(Kisiler)
     list = Kisiler.filter(item => item !== sansliKisi)
